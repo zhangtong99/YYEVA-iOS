@@ -11,6 +11,10 @@
 #import "YYEVACommon.h"
 NS_ASSUME_NONNULL_BEGIN
 
+static NSString *kYYEVAJsonDescriptKey = @"descript";
+static NSString *kYYEVAJsonEffectKey = @"effect";
+static NSString *kYYEVAJsonFrameDatasKey = @"datas";
+
 @class YYEVAEffectSource;
 
 @interface YYEVAEffectFrame : NSObject

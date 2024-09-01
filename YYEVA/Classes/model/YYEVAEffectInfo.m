@@ -8,9 +8,6 @@
 #import "YYEVAEffectInfo.h"
 #import "YSVideoMetalUtils.h"
 
-static NSString *kYYEVAJsonDescriptKey = @"descript";
-static NSString *kYYEVAJsonEffectKey = @"effect";
-static NSString *kYYEVAJsonFrameDatasKey = @"datas";
 
 #define YYEVACheckValideDict(dict) \
     if(!dict||![dict isKindOfClass:NSDictionary.class]) { \
