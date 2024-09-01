@@ -50,7 +50,7 @@
         NSArray *videoTracks = [asset tracksWithMediaType:AVMediaTypeVideo];
         for (AVAssetTrack *track in videoTracks) {
             CGSize pSize = CGSizeApplyAffineTransform(track.naturalSize, track.preferredTransform);
-            videoSize = CGSizeMake(fabs(videoSize.width), fabs(videoSize.height));
+            videoSize = CGSizeMake(fabs(pSize.width), fabs(pSize.height));
         }
         if (!CGSizeEqualToSize(videoSize, CGSizeZero)) {
             return @{kYYEVAJsonDescriptKey: @{@"width": @(videoSize.width), @"height": @(videoSize.height)}};
